@@ -1,53 +1,26 @@
-const { CarReview } = require("../models");
+const { Post } = require('../models');
 
-const carreviewData = [
-  {
-    title: "Amazing Electric Car: Tesla Model S",
-    carReview:
-      "The Tesla Model S is an outstanding electric car with impressive performance and range. The interior is spacious, and the technology features are top-notch.",
-    carmake: "Tesla",
-    carmodel: "Model S",
-    creator_id: 1,
-    date_reviewcreated: "2021-06-01 15:11:45",
-  },
-  {
-    title: "Luxury SUV: Range Rover",
-    carReview:
-      "The Range Rover is a luxurious SUV that offers a comfortable ride and a well-appointed interior. The off-road capabilities are exceptional, making it a versatile vehicle for various terrains.",
-    carmake: "Land Rover",
-    carmodel: "Range Rover",
-    creator_id: 2,
-    date_reviewcreated: "2021-05-14 12:57:33",
-  },
-  {
-    title: "Family Sedan: Honda Accord",
-    carReview:
-      "The Honda Accord is a reliable family sedan with excellent fuel efficiency and a spacious cabin. It offers a smooth ride and a suite of advanced safety features.",
-    carmake: "Honda",
-    carmodel: "Accord",
-    creator_id: 3,
-    date_reviewcreated: "2021-09-01 14:56:34",
-  },
-  {
-    title: "Sporty Hatchback: Volkswagen Golf GTI",
-    carReview:
-      "The Volkswagen Golf GTI is a sporty hatchback that offers a fun driving experience, combining performance and practicality. The interior is well-built and offers a generous amount of space for passengers and cargo.",
-    carmake: "Volkswagen",
-    carmodel: "Golf GTI",
-    creator_id: 4,
-    date_reviewcreated: "2021-08-06 04:25:22",
-  },
-  {
-    title: "Hybrid Option: Toyota Prius",
-    carReview:
-      "The Toyota Prius is a popular hybrid car that boasts impressive fuel economy and a comfortable ride. It offers ample cargo space and comes with a variety of standard safety features.",
-    carmake: "Toyota",
-    carmodel: "Prius",
-    creator_id: 5,
-    date_reviewcreated: "2021-07-27 10:34:24",
-  },
-];
+const postData = [
+    {
+        title: "Handlebars is widely used in web development",
+        contents: "Known for its simplicity, flexibility, and ease of use. It has become a popular choice for building dynamic web applications.",
+        date_posted: "03/13/2023",
+        user_id: 1
+    },
+    {
+        title: "Benefits of Express.js",
+        contents: "Provides a wide range of features and middleware that can be used to build everything from simple REST APIs to complex web applications.",
+        date_posted: "01/12/2023",
+        user_id: 2
+    },
+    {
+        title: "Is technology growing exponentially?",
+        contents: "Computers' speed and power have generally been doubling every one and a half to two years since the 1960s and 70s.",
+        date_posted: "10/17/2022",
+        user_id: 3
+    }
+]
 
-const seedCarReview = () => CarReview.bulkCreate(carreviewData);
+const seedPosts = () => Post.bulkCreate(postData);
 
-module.exports = seedCarReview;
+module.exports = seedPosts;
