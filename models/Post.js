@@ -15,22 +15,14 @@ CarReview.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    carReview: {
+    contents: {
       type: DataTypes.STRING(10000),
       allowNull: false,
     },
-    date_reviewcreated: {
+    date_posted: {
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
-    },
-    carmake: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    carmodel: {
-      type: DataTypes.STRING,
-      allowNull: false,
     },
     creator_id: {
       type: DataTypes.INTEGER,
@@ -45,8 +37,8 @@ CarReview.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "CarReview",
+    modelName: "post",
   }
 );
 
-module.exports = CarReview;
+module.exports = Post;

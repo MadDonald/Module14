@@ -1,0 +1,36 @@
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg bg-warning">
+  <div class="container-fluid">
+    <!-- Blog Title -->
+    <h1 class="mb-2">The IT Blog</h1>
+    <!-- Navbar Toggle Button for Mobile Devices -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Navigation Menu Items -->
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav d-flex flex-column">
+        <!-- Home Link -->
+        <li class="nav-item active">
+          <a class="nav-link text-dark" href="/">Home</a>
+        </li>
+        <!-- Dashboard Link -->
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/dashboard">Dashboard</a>
+        </li>
+        <!-- Show Logout Button if User is Logged In -->
+        {{#if loggedIn}}
+        <li class="nav-item mt-2">
+          <button id="logout" class="btn btn-danger">Logout</button>
+        </li>
+        <!-- Show Login Button if User is Not Logged In -->
+        {{else}}
+        <li class="nav-item mt-2">
+          <a id="login" class="btn btn-primary" href="/login">Login</a>
+        </li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>

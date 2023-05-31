@@ -19,14 +19,7 @@ Comment.init(
       type: DataTypes.DATE,
       allowNull: false,
     },
-    carReview_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "CarReview",
-        key: "id",
-      },
-    },
-    commenter_id: {
+     commenter_id: {
       type: DataTypes.INTEGER,
       references: {
         model: "user",

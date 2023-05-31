@@ -1,0 +1,26 @@
+<!-- Comments section -->
+<div class="card w-75 mb-3 mx-auto border-0">
+  <br>
+  <br>
+  <h3>Comments:</h3>
+  <!-- Loop over each comment -->
+  {{#each this}}
+
+  <div class="comments card-body">
+    <section id="comment-section" class="comment">
+      <!-- Display comment id and content -->
+      {{log comment.id}}
+      <a href="/edit-comment/{{id}}">{{contents}}</a>
+
+      <div id="comment-metadata" class="meta">
+        <!-- Display commenter's username and date of comment -->
+        Posted by: {{user.username}} on {{format_date date_posted}}
+      </div>
+    </section>
+  </div>
+
+  {{/each}}
+
+</div>
+
+</div>

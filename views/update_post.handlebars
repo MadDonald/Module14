@@ -1,0 +1,31 @@
+<!-- Edit Post Section -->
+<div class="content-section w-75 col-md-12 mx-auto">
+
+  <h2 id="header-title">Modify Post</h2>
+
+  <div id="article-id" value="{{post.id}}" hidden></div>
+
+  <div class="input-container w-75 col-md-12 mx-auto">
+
+    <div class="input-group">
+      <h4 id="post-modify-prompt" for="title">Title:</h4>
+
+      <input name="modified-post-title" id="post-modify-input" class="form-input" type="text" id="modified-title"
+        value="{{post.title}}" />
+    </div>
+
+    <div class="input-group">
+      <br>
+      <h4 id="post-modify-prompt" for="contents">Content:</h4>
+      <input name="modified-post-contents" class="modified-contents" id="post-modify-input" id="modified-contents"
+        value="{{post.contents}}" />
+    </div>
+
+    <div class="input-group">
+      <br>
+      <button class="btn btn-primary" id="modify-post-btn" data-id="{{post.id}}">Modify Post</button>
+    </div>
+    <script src="/js/modifyPost.js"></script>
+  </div>
+
+</div>

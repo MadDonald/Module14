@@ -1,0 +1,41 @@
+<!-- Single Blog Entry -->
+<div id="blog-card" class="blog-entry-card w-75 mb-3 mx-auto border-0">
+    <h5 id="blog-title">{{blog.title}}</h5>
+    <div id="blog-id" value="{{blog.id}}" hidden></div>
+    <div class="blog-content">
+        <blockquote class="content-quote">
+            <p class="content-text">{{blog.contents}}</p>
+            <footer class="quote-author">Written by: {{blog.user.username}} {{format_date blog.date_posted}}
+            </footer>
+        </blockquote>
+    </div>
+    <div id="edit-remove-blog" class="control-group d-grid gap-2 d-md-flex">
+        <a id="edit-blog-link" href="/edit/{{blog.id}}" class="btn btn-primary">Edit</a>
+        <button id="remove-blog-btn" class="btn btn-primary" data-id="{{blog.id}}"> Remove</button>
+    </div>
+</div>
+
+{{#if loggedIn}}
+<div class="comment-section w-80 col-md-8 mx-auto border-0">
+    <form class="response-form">
+        <div class="input-group">
+            <label id="response-label" for="response">
+                Leave a Comment:
+            </label>
+            <br />
+            <textarea id="response-box" class="text-area" name="response-body" placeholder="Write your thoughts here!"
+                rows="4" cols="64"></textarea>
+        </div>
+        <div id="response-btn-post" class="input-group">
+            <button id="response-btn" class="btn btn-primary" type="submit">Post Comment</button>
+        </div>
+    </form>
+</div>
+{{/if}}
+
+{{> responses blog.responses}}
+
+{{#if loggedIn}}
+<script src="/js/removeBlog.js"></script>
+<script src="/js/postResponse.js"></script>
+{{/if}}

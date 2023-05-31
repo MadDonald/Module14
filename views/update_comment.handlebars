@@ -1,0 +1,34 @@
+<!-- Edit Comment Section -->
+<div class="main-container w-75 col-md-12 mx-auto">
+
+  <h2 id="header-title">Existing Comment</h2>
+
+  <p class="comment-details">{{comment.contents}}</p>
+
+  <div id="article-id" value="{{comment.post_id}}" hidden></div>
+
+  <h3 id="subheader-title">Modify Comment</h3>
+
+  <div class="modify-comment">
+    <p id="comment-prompt" for="comment">
+      Modify below
+    </p>
+    <textarea id="revised_contents" name="contents" rows="4" cols="64">
+    </textarea>
+    <br>
+  </div>
+
+  <div id="comment-buttons" class="form-group">
+    <button id="modify-btn" class="edit-comment-button btn btn-primary" data-id="{{comment.id}}">Modify</button>
+    <button id="remove-btn" class="delete-comment-button btn btn-primary" data-id="{{comment.id}}">Remove</button>
+  </div>
+
+
+  {{#if loggedIn}}
+
+  <script src="/js/removeComment.js"></script>
+
+  <script src="/js/modifyComment.js"></script>
+  {{/if}}
+
+</div>
