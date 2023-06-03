@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: var(--background)  
+  background-color: var(--background);
 }
 
 .navTitle {
@@ -24,39 +24,18 @@ body {
   border-style: solid;
 }
 
-/* .carReviewTitle {
-  text-decoration: initial;
-  color: rgb(238, 104, 55);
-} */
-
-/* .carReviewDesc {
-  border-style: solid;
-  margin-bottom: 5px;
-  padding: 2px;
-  background-color: var(--background)
-} */
-
 .carReviewDescMain {
   font-weight: 700;
 }
 
 .carReviewDescTwo {
   font-size: 25px;
-  /* font-style: italic; */
 }
 
-/* .carReviewCreate {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 12px;
-  padding: 5px;
-  color: darkkhaki;
-} */
-
 .carReviewBoxCont {
-	margin-top: 10px;
+  margin-top: 10px;
   border-style: solid;
-  background-color: var(--background)
+  background-color: var(--background);
 }
 
 .formCont {
@@ -65,7 +44,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .commentCont {
   margin-left: auto;
@@ -86,50 +64,44 @@ body {
 .commentText {
   font-weight: bold;
   padding-top: 10px;
-  background-color: var(--background)
+  background-color: var(--background);
 }
 
 .commentCont {
   border-style: dotted;
 }
 
-/* .headerRow {
-  background-color: rgb(253, 221, 221);
-  margin-bottom: 10px;
-} */
-
 a:link {
   color: rgb(220, 89, 19);
 }
+
 a:visited {
   color: rgb(43, 204, 225);
 }
 
-
 a:hover {
   color: rgb(32, 104, 237);
-  /* background-color:rgb(65, 225, 43) */
 }
 
-.login{
-	margin-left: 25px;
+.login {
+  margin-left: 25px;
 }
 
-.signup{
-	margin-left: 25px;
+.signup {
+  margin-left: 25px;
 }
 
-.form-group{
-	margin-top: 10px;
+.form-group {
+  margin-top: 10px;
 }
 
-.signIn{
+.signIn {
   font-size: large;
   font-weight: bold;
   align-items: center;
 }
 
-#body{
+#body {
   justify-content: center;
   align-items: center;
 }

@@ -1,23 +1,29 @@
-document
-  .querySelector("#edit-review-form")
-  .addEventListener("submit", async (event) => {
-    event.preventDefault();
+// Edit comment form submission handler
+const editFormHandler = async (event) => {
 
-    const title = document.querySelector("#title").value.trim();
-    const carReview = document.querySelector("#content").value.trim();
-    const id = window.location.pathname.split("/")[2];
-
-    if (title && carReview) {
-      const response = await fetch(`/edit-review/${id}`, {
+    // Check if the clicked element has a data-id attribute
+    if (event.target.hasAttribute("data-id")) {
+      const id = event.target.getAttribute("data-id");
+      const postId = document.querySelector("#post-id").getAttribute("value");
+  
+       // Get the updated contents from the form
+      const contents = document.querySelector("#updated_contents").value; 
+  
+      // Send a PUT request to update the comment with the given id
+      const response = await fetch(`/api/comment/${id}`, {
         method: "PUT",
-        body: JSON.stringify({ title, carReview }),
+        body: JSON.stringify({ contents }),
         headers: { "Content-Type": "application/json" },
       });
-
+  
+      // Redirection If the request is successful otherwise
       if (response.ok) {
-        document.location.replace(`/carReview/${id}`);
+        document.location.replace(`/post/${postId}`);
       } else {
-        alert("Failed to update the review");
+        alert("Failed to edit comment.");
       }
     }
-  });
+  };
+  
+  document.querySelector("#edit-btn").addEventListener("click", editFormHandler);
+  

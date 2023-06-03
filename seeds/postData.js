@@ -2,20 +2,20 @@ const { Post } = require('../models');
 
 const postData = [
     {
-        title: "Handlebars is widely used in web development",
-        contents: "Known for its simplicity, flexibility, and ease of use. It has become a popular choice for building dynamic web applications.",
+        title: "10 things you need to know",
+        contents: "Computers are great for the whole family.",
         date_posted: "03/13/2023",
         user_id: 1
     },
     {
-        title: "Benefits of Express.js",
-        contents: "Provides a wide range of features and middleware that can be used to build everything from simple REST APIs to complex web applications.",
+        title: "How to clear your search history",
+        contents: "click your history and delete all.",
         date_posted: "01/12/2023",
         user_id: 2
     },
     {
-        title: "Is technology growing exponentially?",
-        contents: "Computers' speed and power have generally been doubling every one and a half to two years since the 1960s and 70s.",
+        title: "Can you download more ram?",
+        contents: "No you can not.",
         date_posted: "10/17/2022",
         user_id: 3
     }
