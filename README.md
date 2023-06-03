@@ -1,162 +1,70 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a name="readme-top"></a>
+# Tech Blog
 
+## Description
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
+Welcome to the repository for Tech Blog, an interactive and user-friendly blogging platform designed for tech enthusiasts. Here, users can create posts, comment on existing posts, and engage in lively discussions around cutting-edge technologies, tools, trends, and more.
 
-  <img src="https://user-images.githubusercontent.com/118566376/231605826-ce41460f-a55d-4764-ae7d-981f3ff1346d.png" alt="Logo" width="200" height="200"> 
+## Features
 
-  <h3 align="center">Revved Up Reviews</h3>
+- User registration and login functionality
+- Users can create, edit, and delete their own blog posts
+- Users can comment on blog posts
+- Search functionality for posts
+- User profiles with their post history
+- Responsive design
 
-  <p align="center">
-    Revved Up Reviews: Ignite Your Passion for the Drive
-  </p>
-</div>
+## Installation
 
+### Prerequisites
 
+Before you begin, ensure you have met the following requirements:
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-    </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+- You have installed the latest version of Node.js and npm
+- You have a MongoDB database (local or cloud)
 
+### Steps
 
+1. Clone or download the repo
+git clone https://github.com/username/tech-blog.git
+cd tech-blog
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+markdown
+Copy code
+2. Install the dependencies
+npm install
 
-![image](https://user-images.githubusercontent.com/100619060/230700209-03eced27-7b7d-4421-9d2d-09797a613294.png)
+sql
+Copy code
+3. Create a .env file in the root directory and add the following
+DATABASE_URL = 'your_mongodb_connection_string'
+JWT_SECRET = 'your_jwt_secret'
 
-Reved Up Reviews is a website that allows users to pose a review of any car they own, letting other users know the pros and cons regarding their vehical. Our site can be used by consumers researching their next car or by users that want to shair their experiences.
+markdown
+Copy code
+4. Run the application
+npm start
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+sql
+Copy code
 
+## Usage
 
+After registering and logging in, users can create a new blog post, edit their own posts, delete posts, and comment on any post. User profile pages show all the posts written by that user.
 
-### Built With
-
-
-* HTML
-* CSS
-* JavaScript
-* [Node.js](https://nodejs.org/en/docs)
-* [Tailwind](https://tailwindcss.com/)
-* [Express.js](https://expressjs.com/)
-* [Express-session](https://www.npmjs.com/package/express-session)
-* [Express-handlebars]()
-* [Bcrypt]()
-* [Mysql2](https://www.npmjs.com/package/mysql2)
-* [Sequelize](https://sequelize.org/)
-* [Connect-session-sequelize](https://www.npmjs.com/package/express-session)
-* [Dotenv]()
-* [Handlebars.js](https://handlebarsjs.com/)
-* [Heroku](https://www.heroku.com/platform)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-[Deployed Website](https://revved-up-reviews.herokuapp.com/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-## Roadmap
-- [x] Implement Node.js and Express.js to create a RESTful API
-- [x] Interactive (i.e: accept and respond to user input)
-- [x] Implement MySQL and the Sequelize ORM for the database
-- [x] Implement GET and POST routes to manipulate data
-- [x] MVC file structure
-- [x] Implement user authentication
-- [x] Protect sensitive data using environment variables
-- [x] Polished UI
-- [x] Clean repository that meets quality coding standards
-- [x] Quality README
-- [x] Deployed to Heroku
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- CONTRIBUTING -->
 ## Contributing
 
-- Sotirios Chortogiannos
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-- Terry 
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-- Jackson Rainbird-Kendrick
-
-- Jacob MacDonald
-
-- Yingge Hu
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
 ## Contact
 
-
-Repository
-> [https://github.com/group4project22023/Revved_up_Reviews](https://github.com/group4project22023/Revved_up_Reviews)
----
-Sotirios Chortogiannos
-> [https://github.com/sotiriosc](https://github.com/sotiriosc)
----
-Terry 
-> [https://github.com/TerryKor](https://github.com/TerryKor)
----
-Jackson Rainbird-Kendrick
-> [https://github.com/JacksonR-K](https://github.com/JacksonR-K)
----
-Jacob MacDonald
-> [https://github.com/MadDonald](https://github.com/MadDonald)
----
-Yingge Hu
-> [https://github.com/huyingg1](https://github.com/huyingg1)
----
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-
-* https://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Jacob MacDonald - jacobmaddonald@gmail.com
